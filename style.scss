@@ -113,6 +113,7 @@ header{
 
                         height: 250px;
                         object-fit: fill;
+                        box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
                        
 
                     }
@@ -185,7 +186,7 @@ header{
                    button{
 
                       @extend %button;
-                      border: #F9F4F8 1px solid;
+                      border: #F9F4F8 2px solid;
                    }
 }
 .footer{
