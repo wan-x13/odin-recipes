@@ -1,0 +1,139 @@
+main {
+  display: flex;
+  flex-direction: column;
+}
+
+.info-content .container-img, main > .header-content, .main-header, .information, .cite, .call-action {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.call-action .call, .description, header .links ul, header {
+  display: flex;
+  justify-content: space-between;
+}
+
+.call-action button, .description button {
+  background: #3882F6;
+  color: #F9F4F8;
+  width: 100px;
+  height: 30px;
+  border-radius: 5px;
+  padding: 5px;
+  border: none;
+}
+.call-action button:hover, .description button:hover {
+  cursor: pointer;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100%;
+}
+
+main .header-content, main .main-header {
+  background-color: #1F2937;
+}
+
+main > .header-content header, main > .header-content .description, main > .header-content .info-content, main > .header-content .cite, main > .header-content .call-action, main > .header-content .footer-info, .main-header header, .main-header .description, .main-header .info-content, .main-header .cite, .main-header .call-action, .main-header .footer-info, .information header, .information .description, .information .info-content, .information .cite, .information .call-action, .information .footer-info, .cite header, .cite .description, .cite .info-content, .cite .cite, .cite .call-action, .cite .footer-info, .call-action header, .call-action .description, .call-action .info-content, .call-action .cite, .call-action .call-action, .call-action .footer-info {
+  width: 70%;
+}
+
+header {
+  padding: 16px 0;
+}
+header .logo {
+  font-size: 24px;
+  color: #F9F4F8;
+}
+header .links ul {
+  gap: 10px;
+  margin: 0;
+  padding: 0;
+}
+header .links ul li {
+  list-style: none;
+}
+header .links ul li a {
+  text-decoration: none;
+  color: #e5e7eb;
+  font-size: 18px;
+}
+
+.description {
+  align-items: center;
+  height: 450px;
+}
+.description h1 {
+  font-size: 48px;
+  color: #F9F4F8;
+}
+.description p {
+  color: #e5e7eb;
+}
+.description div, .description figure img {
+  width: 450px;
+  flex: 1 1 auto;
+}
+.description figure img {
+  height: 250px;
+  object-fit: fill;
+}
+.info-content {
+  text-align: center;
+  height: 400px;
+}
+.info-content img {
+  width: 180px;
+  border-radius: 10px;
+}
+
+.cite {
+  height: 380px;
+  background: #e5e7eb;
+}
+.cite p {
+  font-size: 36px;
+}
+.cite .quote {
+  width: 70%;
+  font-style: italic;
+}
+.cite figcaption {
+  text-align: center;
+  font-weight: bolder;
+  font-size: 36px;
+  position: relative;
+  left: 50px;
+}
+
+.call-action {
+  height: 360px;
+}
+.call-action .call {
+  align-items: center;
+  width: 70%;
+  background: #3882F6;
+  color: #F9F4F8;
+  margin: 30px;
+  padding: 16px 40px;
+}
+.call-action button {
+  border: #F9F4F8 1px solid;
+}
+
+.footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #1F2937;
+  height: 120px;
+  text-align: center;
+  color: #F9F4F8;
+  font-size: 18px;
+}
+
+/*# sourceMappingURL=style.css.map */

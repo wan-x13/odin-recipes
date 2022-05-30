@@ -1,0 +1,199 @@
+$colbold : #F9F4F8;
+$colsm : #e5e7eb;
+$fs : 36px;
+
+%disposition{
+
+    display: flex;
+    flex-direction: column;
+}
+%disposition-center{
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+%disposition-space{
+    display: flex;
+    justify-content: space-between;
+}
+%button{
+    background: #3882F6; 
+    color: $colbold;
+    width: 100px;
+    height: 30px;
+    border-radius: 5px ;
+    padding: 5px;
+    border: none;
+                    &:hover{
+
+                        cursor: pointer;
+                    }
+}
+
+
+body{
+
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+}
+main{
+    @extend %disposition;
+    .header-content, .main-header{
+
+        background-color: #1F2937;
+    }
+
+}
+main > .header-content, .main-header,.information,.cite,.call-action{
+    @extend %disposition-center;
+    header, .description,.info-content,.cite,.call-action, .footer-info{
+
+        width: 70%;
+    }
+    
+}
+header{
+
+    @extend %disposition-space;
+    padding: 16px 0;
+
+    .logo{
+        font-size: 24px;
+        color:  $colbold;
+    }
+
+    .links ul{
+
+        @extend %disposition-space;
+        gap: 10px;
+        margin: 0;
+        padding: 0;
+                    li{
+                        list-style: none;
+                       a{
+
+                       text-decoration: none;
+                        color: $colsm;
+                        font-size: 18px;
+                        }
+
+                    }
+          }
+   
+}
+
+
+.description{
+  @extend %disposition-space;
+  align-items: center;
+  height: 450px;
+
+                    h1{
+
+                        font-size: 48px;
+                        color: $colbold;
+                    }
+                    p{
+                        color: $colsm;
+
+
+                    }
+                   
+                    
+                    div , figure img{
+                       width: 450px;
+                       flex: 1 1 auto; 
+              
+                       
+                    }
+                    figure img{
+
+                        height: 250px;
+                        object-fit: fill;
+                       
+
+                    }
+                    button{
+                     @extend %button;
+                    }
+
+ 
+}
+
+.info-content{
+
+    text-align: center;
+    height: 400px;
+                .container-img{
+
+                    @extend %disposition-center;
+
+                  
+                }
+                img{
+                    width: 180px;
+                    border-radius: 10px;
+                }
+}
+
+.cite{
+
+    height: 380px;
+    background: $colsm;
+
+                p{
+
+                    font-size: $fs;
+                }
+            .quote{
+
+                width: 70%;
+                font-style: italic;
+         
+
+            }
+            figcaption{
+                text-align: center;
+
+                font-weight: bolder;
+                font-size: $fs;
+
+                position: relative;
+                left: 50px;
+            }
+}
+.call-action{
+    height: 360px;
+
+    @extend %disposition-center;
+                   .call{
+                    @extend %disposition-space;
+                    align-items: center;
+                    width: 70%;
+                    background: #3882F6;
+                    color: #F9F4F8;
+                    margin: 30px;
+                    padding: 16px 40px;
+                
+                   }
+                  
+                   button{
+
+                      @extend %button;
+                      border: #F9F4F8 1px solid;
+                   }
+}
+.footer{
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #1F2937;
+    height: 120px;
+    text-align: center;
+    color: #F9F4F8;
+    font-size: 18px;
+}
