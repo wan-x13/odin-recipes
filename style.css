@@ -66,6 +66,7 @@ header .links ul li a {
 .description {
   align-items: center;
   height: 450px;
+  gap: 50px;
 }
 .description h1 {
   font-size: 48px;
@@ -103,6 +104,7 @@ header .links ul li a {
 .cite .quote {
   width: 70%;
   font-style: italic;
+  color: #1F2937;
 }
 .cite figcaption {
   text-align: center;

@@ -90,6 +90,7 @@ header{
   @extend %disposition-space;
   align-items: center;
   height: 450px;
+  gap: 50px ;
 
                     h1{
 
@@ -106,7 +107,8 @@ header{
                     div , figure img{
                        width: 450px;
                        flex: 1 1 auto; 
-              
+                       
+                     
                        
                     }
                     figure img{
@@ -114,6 +116,8 @@ header{
                         height: 250px;
                         object-fit: fill;
                         box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
+                     
+                       
                        
 
                     }
@@ -155,8 +159,8 @@ header{
 
                 width: 70%;
                 font-style: italic;
-         
-
+                color: #1F2937;
+             
             }
             figcaption{
                 text-align: center;
@@ -180,6 +184,7 @@ header{
                     color: #F9F4F8;
                     margin: 30px;
                     padding: 16px 40px;
+                                 
                 
                    }
                   
@@ -188,7 +193,9 @@ header{
                       @extend %button;
                       border: #F9F4F8 2px solid;
                    }
+
 }
+               
 .footer{
 
     display: flex;
